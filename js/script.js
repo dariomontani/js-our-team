@@ -30,3 +30,7 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+// indico dove andranno inseriti gli elementi
+let container = document.querySelector('.team-container');
+
