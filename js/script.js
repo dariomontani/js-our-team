@@ -37,4 +37,18 @@ let container = document.querySelector('.team-container');
 // indico al ciclo for che dovrà partire dalla seconda cards perchè la prima è già inserita nell'HTML
 for (let i = 1; i < team.length; i++) {
 
+  let teams = team[i]
+
+  let cardDiv = `<div class="team-card">
+              <div class="card-image">
+                <img
+                src="img/${teams.image}"
+                alt="${teams.name}"
+                />
+              </div>
+              <div class="card-text">
+                <h3>${teams.name}</h3>
+                <p>${teams.role}</p>
+              </div>
+            </div>`;
 }
