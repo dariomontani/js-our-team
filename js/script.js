@@ -34,3 +34,7 @@ const team = [
 // indico dove andranno inseriti gli elementi
 let container = document.querySelector('.team-container');
 
+// indico al ciclo for che dovrà partire dalla seconda cards perchè la prima è già inserita nell'HTML
+for (let i = 1; i < team.length; i++) {
+
+}
