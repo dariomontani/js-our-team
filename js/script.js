@@ -54,3 +54,35 @@ for (let i = 1; i < team.length; i++) {
 
   container.innerHTML += cardDiv;
 }
+
+let button = document.getElementById('addMemberButton');
+let nameInputUser = document.getElementById('name');
+let roleInputUser = document.getElementById('role');
+let imageInputUser = document.getElementById('image');
+
+button.addEventListener('click', function (event){
+  event.preventDefault();
+  
+  let nameUser = nameInputUser.value;  
+  let roleUser = roleInputUser.value;
+  let imageUser = imageInputUser.value;  
+
+  if (nameUser.length > 0 && roleUser.length > 0){
+  let cardInputDiv = `<div class="team-card">
+              <div class="card-image">
+                <img
+                src="img/${imageUser}"
+                alt="${nameUser}"
+                />
+              </div>
+              <div class="card-text">
+                <h3>${nameUser}</h3>
+                <p>${roleUser}</p>
+              </div>
+            </div>`;
+
+  container.innerHTML += cardInputDiv;
+  } else {
+    console.log('non hai inserito dei dati');
+  }
+});
