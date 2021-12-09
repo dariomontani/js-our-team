@@ -51,4 +51,6 @@ for (let i = 1; i < team.length; i++) {
                 <p>${teams.role}</p>
               </div>
             </div>`;
+
+  container.innerHTML += cardDiv;
 }
